@@ -14,45 +14,45 @@ class _CatugaryState extends State<Catugary> {
   List<Map> cat = [
     {
       'id': 1,
-      'name': ' عامة',
+      'name': 'عامة',
       'img':'icons/math.png',
       'isfavoite': 'true',
     },
     {
       'id': 2,
-      'name': ' رياضية',
-      'img': 'icons/math.png',
+      'name': 'رياضة',
+      'img': 'icons/sport.png',
       'isfavoite': 'false',
     },
     {
       'id': 3,
-      'name': ' علوم',
+      'name': 'علوم',
       'img': 'icons/Sciences.png',
       'isfavoite': 'true',
     },
     {
       'id': 4,
-      'name': ' فلك',
-      'img': 'icons/math.png',
+      'name': 'دراما',
+      'img': 'icons/cinema.png',
       'isfavoite': 'true',
     },
     {
       'id': 5,
-      'name': ' رياضيات',
+      'name': 'رياضيات',
       'img': 'icons/mathh.png',
       'isfavoite': 'false',
     },
     {
       'id': 6,
-      'name': ' فلك',
-      'img':'icons/math.png',
+      'name': 'إسلامية',
+      'img':'icons/islamic.png',
       'isfavoite': 'true',
     },
     {
       'id': 7,
-      'name': ' رياضة',
-      'img': 'icons/math.png',
-      'isfavoite': 'true',
+      'name': 'انكليزي',
+      'img': 'icons/language.png',
+      'isfavoite': 'false',
     }
   ];
   @override
@@ -81,7 +81,7 @@ class _CatugaryState extends State<Catugary> {
 
                         leading: Image(
                         image: AssetImage((cat[index]['img'])),
-                        // height: 20,
+                        // height: 100,
                         // colorBlendMode: BlendMode.darken,
                         ),
                         title: Text(cat[index]['name'].toString(),
@@ -94,7 +94,7 @@ class _CatugaryState extends State<Catugary> {
                                 color: Colors.red,
                                 
                               )
-                            : Icon(EvaIcons.heart,),
+                            : Icon(EvaIcons.heart, color: Colors.white70),
 
                         // // Text(cat[index]['id'].toString(),
                         // //     style: TextStyle(color: Colors.white),

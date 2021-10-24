@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:bottomnav/friende.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
@@ -30,7 +31,9 @@ class _DashboardState extends State<Dashboard> {
         children: [
           Catugary(),
           Home(),
+          Friende(),
           Setting(),
+
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -57,7 +60,9 @@ class _DashboardState extends State<Dashboard> {
         items: [
           _navit('icons/1.png', 'Catugary'),
           _navit('icons/home.png', 'Home'),
+          _navit('icons/friend.png', 'friende'),
           _navit('icons/set.png', 'Setting'),
+
         ],
       ),
     );
@@ -74,8 +79,13 @@ class _DashboardState extends State<Dashboard> {
         backgroundColor: Colors.white10,
         activeIcon: Container(
           child: Stack(
-              alignment: AlignmentDirectional.topCenter,
-              overflow: Overflow.visible,
+              clipBehavior: Clip.none, alignment: AlignmentDirectional.topCenter,
+
+
+
+
+
+
               children: [
                 Text(''),
                 Positioned(
